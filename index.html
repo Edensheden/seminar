@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognizant Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Cognizant!!</h1>
+        <h2>Welcome to Cognizant!!</h2>
+        <h3>Welcome to Cognizant!!</h3>
+        <h4>Welcome to Cognizant!!</h4>
+        <h5>Welcome to Cognizant!!</h5>
+        <h6>Welcome to Cognizant!!</h6>
+
+        <p class="about-cognizant">
+            Cognizant is a global leader in business and technology services. Founded in 1994, it helps companies modernize their technology and transform experiences. With expertise across industries, Cognizant delivers agile and efficient solutions to drive innovation.
+        </p>
+
+        <h3>Unordered Grocery List</h3>
+        <ul class="grocery-list">
+            <li>Milk</li>
+            <li>Bread</li>
+            <li>Eggs</li>
+            <li>Vegetables</li>
+        </ul>
+
+        <h3>Ordered Grocery List</h3>
+        <ol class="grocery-list">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Oranges</li>
+            <li>Grapes</li>
+        </ol>
+
+        <h3>Grocery Description List</h3>
+        <dl class="grocery-desc">
+            <dt>Milk</dt>
+            <dd>A dairy product.</dd>
+            <dt>Bread</dt>
+            <dd>A staple food made of flour.</dd>
+            <dt>Eggs</dt>
+            <dd>Rich source of protein.</dd>
+        </dl>
+
+        
+        <h3>Quick Links</h3>
+            <ul>
+                 <li><a href="https://www.facebook.com" target="_blank">Go to Facebook</a></li>
+                <li><a href="https://mail.google.com" target="_blank">Go to Gmail</a></li>
+                 <li><a href="https://www.youtube.com" target="_blank">Go to YouTube</a></li>
+            </ul>
+
+        <img src="images.png" alt="Cognizant Logo" class="logo">
+
+        <div class="block-demo">
+            <h2>This is a Block Element</h2>
+            <p>Block elements take full width.</p>
+        </div>
+
+        <p>Inline example: <span class="highlight">This is a span element</span> inside a paragraph and an image:
+            <img src="images.png" class="small-img" alt="Cognizant Icon " >
+        </p>
+
+        <h3> Formulas</h3>
+        <p>Water Formula: H<sub>2</sub>O</p>
+        <p>Pythagoras Theorem: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+
+        <h3>Employee Work Summary Table</h3>
+        <table>
+            <colgroup>
+                <col style="background-color: #f8f9fa;">
+                <col style="background-color: #e8f5e9;">
+                <col style="background-color: #fff3e0;">
+                <col style="background-color: #ede7f6;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2">Employee Name</th>
+                    <th rowspan="2">Department</th>
+                    <th colspan="2">Project Details</th>
+                </tr>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Alice</td>
+                    <td rowspan="2">IT</td>
+                    <td>Website Redesign</td>
+                    <td>3 Months</td>
+                </tr>
+                <tr>
+                    <td>App Development</td>
+                    <td>6 Months</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>HR</td>
+                    <td colspan="2">Recruitment Process Automation (6 Months)</td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td>Finance</td>
+                    <td>Audit Compliance</td>
+                    <td>4 Months</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="text-align: center; font-weight: bold;">Total Employees: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h3>Registration Form</h3>
+        <form id="registrationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">--Select--</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select><br><br>
+
+            <label for="bio">Short Bio:</label><br>
+            <textarea id="bio" name="bio" rows="3" cols="40" placeholder="Tell us about yourself..."></textarea><br><br>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+
+            <p>Skills:</p>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="skills" value="JavaScript">
+            <label for="js">JavaScript</label><br><br>
+
+            <button type="submit" onclick="return handleSubmit()">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+          <h3>HTML Entities</h3>
+    <p>&copy; 2025 Cognizant &nbsp; | &reg; All Rights Reserved &nbsp; | &lt;HTML&gt; &amp; &quot;CSS&quot;</p>
+
+<h3> HTML Audio</h3>
+<audio controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<h3>Pausable Video</h3>
+<video width="400" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<h3>Non-Pausable Video</h3>
+<video id="nonPausableVideo" width="400" autoplay loop muted playsinline style="pointer-events: none;">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<h3>Embedded YouTube Video</h3>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mV5R8Tnc-8E?si=L4qeAq0cbG48okVa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    </div>
+
+    <script>
+        function handleSubmit() {
+            alert("Form Submitted!");
+            return true; // Proceed with form submission
+        }
+    </script>
+
+  
+
+</body>
+</html>
